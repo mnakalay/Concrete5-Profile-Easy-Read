@@ -28,9 +28,10 @@ I'm also using it a bit for the custom flex grid that lines stuff up and that's 
 
 just drag this button to the toolbar
 
-\<div class="bookmarklet">
-[C5 Easy Read](javascript:void function(){function a(a,b,c,d){if("js"==b){var e=document.createElement("script");e.type="text/javascript"}else if("css"==b){var e=document.createElement("link");e.rel="stylesheet",e.type="text/css"}"undefined"!=typeof e&&(0!=d&&(e.readyState?e.onreadystatechange=function(){"loaded"!=e.readyState&&"complete"!=e.readyState||(e.onreadystatechange=null,d())}:e.onload=function(){d()}),"js"==b?e.src=a:"css"==b&&(e.href=a),document.getElementsByTagName(c)[0].appendChild(e))}a("//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.css?"+Math.random(),"css","body",function(){a("//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.js?"+Math.random(),"js","body",!1)})}();)
-\</div>
+<dl class="bookmarklet">
+<dt>Drag me</dt>
+<dd>[C5 Easy Read](javascript:void function(){function a(a,b,c,d){if("js"==b){var e=document.createElement("script");e.type="text/javascript"}else if("css"==b){var e=document.createElement("link");e.rel="stylesheet",e.type="text/css"}"undefined"!=typeof e&&(0!=d&&(e.readyState?e.onreadystatechange=function(){"loaded"!=e.readyState&&"complete"!=e.readyState||(e.onreadystatechange=null,d())}:e.onload=function(){d()}),"js"==b?e.src=a:"css"==b&&(e.href=a),document.getElementsByTagName(c)[0].appendChild(e))}a("//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.css?"+Math.random(),"css","body",function(){a("//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.js?"+Math.random(),"js","body",!1)})}();)</dd>
+</dl>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
