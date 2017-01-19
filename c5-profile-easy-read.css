@@ -159,10 +159,6 @@
         break-after: avoid!important;
     }
 
-    #profile-pro-account .profile-info-item {
-        display: block;
-        position: relative;
-    }
     /*print-only grid*/
     .print-grid-third {
         display: -webkit-box;
