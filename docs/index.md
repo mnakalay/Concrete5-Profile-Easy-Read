@@ -2,6 +2,17 @@
 layout: default
 ---
 
+## If you don't like to read
+Just want to grab the bookmarklet? Here it is!
+
+Drag the button below to your browser's bookmarks bar, [go to a user's public profile on concrete5.org](https://www.concrete5.org/profile/-/view/75201/) and click on the button.
+
+<div class="bookmarklet">
+  <a href="javascript:void function(){function a(a,b,c,d){if('js'==b){var e=document.createElement('script');e.type='text/javascript'}else if('css'==b){var e=document.createElement('link');e.rel='stylesheet',e.type='text/css'}'undefined'!=typeof e&&(0!=d&&(e.readyState?e.onreadystatechange=function(){'loaded'!=e.readyState&&'complete'!=e.readyState||(e.onreadystatechange=null,d())}:e.onload=function(){d()}),'js'==b?e.src=a:'css'==b&&(e.href=a),document.getElementsByTagName(c)[0].appendChild(e))}a('//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.min.css?'+Math.random(),'css','body',function(){a('//rawgit.com/mnakalay/Concrete5-Profile-Easy-Read/master/c5-profile-easy-read.min.js?'+Math.random(),'js','body',!1)})}();" onclick="javascript:void(0)">C5 Profile Easy Read</a>
+</div>
+
+But seriously, if you read on you'll know what you're doing :)
+
 ## Why this bookmarklet
 Reading a user's public profile on concrete5.org is a bit of a pain in the neck as information is presented mostly as images with extra information only available on hover.
 
