@@ -1,5 +1,7 @@
 # Concrete5 User Profile Easy Read
-A simple Bookmarklet to make user profiles on concrete5.org easier to read
+A simple Bookmarklet to make user profiles on concrete5.org easier to read.
+
+You can [get it from its Github Page](https://mnakalay.github.io/Concrete5-Profile-Easy-Read/) along with more details about what it does and how it does it.
 
 ## Why this bookmarklet
 Reading a user's profile on concrete5.org is a bit of a pain in the neck as information is presented mostly as images with extra information only available on hover.
