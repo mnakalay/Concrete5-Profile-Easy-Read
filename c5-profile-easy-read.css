@@ -137,6 +137,11 @@
         break-before: always!important;
     }
 
+    #profile-pro-account .profile-info-item {
+        display: block;
+        page-break-before: always!important;
+        break-before: always!important;
+    }
     /*print-only grid*/
     .print-grid-third {
         display: -webkit-box;
