@@ -62,13 +62,42 @@
         float: none!important;
     }
     
+    #profile-pro-account img,
     #profile-pro-account .grid-item,
     #profile-pro-account .print-grid-item,
     #profile-pro-account .grid-item img,
-    #profile-pro-account .print-grid-item img {
+    #profile-pro-account .print-grid-item img,
+    #profile-pro-account .grid-item .icon-desc {
         page-break-inside: avoid!important;
+        position: relative;
     }
     
+    #profile-pro-account .grid-item .icon-desc {
+        page-break-before: avoid!important;
+    }
+
+    #profile-pro-account .print-grid-item img,
+    #profile-pro-account .grid-item img {
+        display: block!important;
+        page-break-after: avoid!important;
+        max-width: 97px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #profile-pro-account p,
+    #profile-pro-account h3 {
+        orphans: 3!important;
+        widows: 3!important;
+        position: relative;
+        display: block!important;
+    }
+
+    #profile-pro-account h3 {
+        display: block;
+        page-break-after: avoid!important;
+    }
+
     #profile-pro-account {
         position: relative;
     }
@@ -119,50 +148,7 @@
         display: block;
         content: attr(title) " (https://www.concrete5.org" attr(href) ")";
         page-break-inside: avoid!important;
-        break-inside: avoid!important;
         page-break-before: avoid!important;
-        break-before: avoid!important;
-    }
-
-    #profile-pro-account img,
-    #profile-pro-account .grid-item,
-    #profile-pro-account .print-grid-item,
-    #profile-pro-account .grid-item icon-desc {
-        page-break-inside: avoid!important;
-        break-inside: avoid!important;
-        position: relative;
-    }
-
-    #profile-pro-account .grid-item icon-desc {
-        page-break-before: avoid!important;
-        break-before: avoid!important;
-    }
-
-    #profile-pro-account .print-grid-item img,
-    #profile-pro-account .grid-item img {
-        display: block!important;
-        page-break-after: avoid!important;
-        break-after: avoid!important;
-        page-break-inside: avoid!important;
-        break-inside: avoid!important;
-        position: relative;
-        max-width: 97px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #profile-pro-account p,
-    #profile-pro-account h3 {
-        orphans: 3!important;
-        widows: 3!important;
-        position: relative;
-        display: block!important;
-    }
-
-    #profile-pro-account h3 {
-        display: block;
-        page-break-after: avoid!important;
-        break-after: avoid!important;
     }
 
     /*print-only grid*/
