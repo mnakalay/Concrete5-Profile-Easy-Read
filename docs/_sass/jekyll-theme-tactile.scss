@@ -154,6 +154,46 @@ a.button span {
   padding-left: 50px;
 }
 
+.bookmarklet {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.bookmarklet a {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1b9af7;
+  line-height: 36px;
+  border-radius: 4px;
+  padding: 0 40px;
+  color: #1b9af7;
+  font-weight: 300;
+  font-size: 16px; 
+  text-decoration: none;
+  text-align: center; 
+  height: 40px; 
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.bookmarklet a:hover {
+  background-color: rgba(76, 176, 249, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  outline: none;
+}
+
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
