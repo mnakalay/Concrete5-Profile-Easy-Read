@@ -56,7 +56,8 @@
     #profile-pro-account,
     #profile-pro-account .grid-item,
     #profile-pro-account .print-grid-item,
-    #profile-pro-account .profile-info-item,
+    #profile-pro-account .grid-item img,
+    #profile-pro-account .print-grid-item img,
     #profile-pro-account .grid-third,
     #profile-pro-account .print-grid-third {
         float: none!important;
