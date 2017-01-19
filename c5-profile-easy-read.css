@@ -121,6 +121,7 @@
 
     #profile-pro-account .print-grid-item img,
     #profile-pro-account .grid-item img {
+        display: block!important;
         page-break-after: avoid!important;
         break-after: avoid!important;
         page-break-inside: avoid!important;
@@ -133,6 +134,7 @@
         orphans: 3!important;
         widows: 3!important;
         position: relative;
+        display: block!important;
     }
 
     #profile-pro-account h3 {
