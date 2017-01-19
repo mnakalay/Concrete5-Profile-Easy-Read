@@ -130,6 +130,7 @@
     }
 
     #profile-pro-account h3 {
+        display: block;
         page-break-after: avoid!important;
         break-after: avoid!important;
         page-break-before: always!important;
