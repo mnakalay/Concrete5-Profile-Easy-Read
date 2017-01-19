@@ -2,6 +2,33 @@
 layout: default
 ---
 
+## Why this bookmarklet
+Reading a user's profile on concrete5.org is a bit of a pain in the neck as information is presented mostly as images with extra information only available on hover.
+
+A prospective client looking to assess several developers for instance would have to go to each profile and hover on badges one after another to do so.
+
+That's not productive and frankly it's a pain in the rumpus.
+
+## What it does
+This little bookmarklet does 2 things:
+
+  - It modifies the page's styling to make it readable without hovering
+  - It adds some print styling to make it easy to print in a readable way
+
+## Limitations
+This works pretty well on screen in any modern browser.
+The print styling, however, works best in Chrome and still is not perfect but acceptable.
+Chrome has problems respecting page break directives and from time to time you'll have an image split in 2 or an image on one page and its label on the other.
+Printing in Firefox just looks not so great.
+
+## Disclaimer
+I know, I'm using the heck out of !important.
+I think it is acceptable as concrete5.org profile page has some pretty opiniated styling. What's more !important is mostly only used for the print styling and concrete5.org has none so it won't break anything.
+I'm also using it a bit for the custom flex grid that lines stuff up and that's not interfering with c5 styling.
+
+just drag this button to the toolbar
+[Bookmarklet](void function(){function a(a,b,c,d){if("js"==b){var e=document.createElement("script");e.type="text/javascript"}else if("css"==b){var e=document.createElement("link");e.rel="stylesheet",e.type="text/css"}"undefined"!=typeof e&&(0!=d&&(e.readyState?e.onreadystatechange=function(){"loaded"!=e.readyState&&"complete"!=e.readyState||(e.onreadystatechange=null,d())}:e.onload=function(){d()}),"js"==b?e.src=a:"css"==b&&(e.href=a),document.getElementsByTagName(c)[0].appendChild(e))}a("//mnakalay.github.io/Concrete5-Profile-Easy-Read/c5-profile-easy-read.css?"+Math.random(),"css","body",function(){a("//mnakalay.github.io/Concrete5-Profile-Easy-Read/c5-profile-easy-read.js?"+Math.random(),"js","body",!1)})}();)
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
