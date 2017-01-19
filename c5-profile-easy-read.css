@@ -50,7 +50,10 @@
     @page {
         margin: 1.75cm;
     }
-
+    #profile-pro-account {
+        position: relative;
+    }
+    
     /*hide non-essential elements*/
     #header,
     #page-header,
@@ -108,6 +111,7 @@
     #profile-pro-account .grid-item icon-desc {
         page-break-inside: avoid!important;
         break-inside: avoid!important;
+        position: relative;
     }
 
     #profile-pro-account .grid-item icon-desc {
@@ -121,12 +125,14 @@
         break-after: avoid!important;
         page-break-inside: avoid!important;
         break-inside: avoid!important;
+        position: relative;
     }
 
     #profile-pro-account p,
     #profile-pro-account h3 {
         orphans: 3!important;
         widows: 3!important;
+        position: relative;
     }
 
     #profile-pro-account h3 {
@@ -141,6 +147,7 @@
         display: block;
         page-break-before: always!important;
         break-before: always!important;
+        position: relative;
     }
     /*print-only grid*/
     .print-grid-third {
