@@ -21,8 +21,3 @@ This works pretty well on screen in any modern browser.
 The print styling, however, works best in Chrome and still is not perfect but acceptable.
 Chrome has problems respecting page break directives and from time to time you'll have an image split in 2 or an image on one page and its label on the other.
 Printing in Firefox just looks not so great.
-
-## Disclaimer
-I know, I'm using the heck out of !important.
-I think it is acceptable as concrete5.org profile page has some pretty opiniated styling. What's more !important is mostly only used for the print styling and concrete5.org has none so it won't break anything.
-I'm also using it a bit for the custom flex grid that lines stuff up and that's not interfering with c5 styling.
