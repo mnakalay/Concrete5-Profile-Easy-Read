@@ -52,7 +52,6 @@
     }
     body,
     html,
-    div,
     #profile-pro-account,
     #profile-pro-account .grid-item,
     #profile-pro-account .print-grid-item,
@@ -61,6 +60,13 @@
     #profile-pro-account .grid-third,
     #profile-pro-account .print-grid-third {
         float: none!important;
+    }
+    
+    #profile-pro-account .grid-item,
+    #profile-pro-account .print-grid-item,
+    #profile-pro-account .grid-item img,
+    #profile-pro-account .print-grid-item img {
+        page-break-inside: avoid!important;
     }
     
     #profile-pro-account {
