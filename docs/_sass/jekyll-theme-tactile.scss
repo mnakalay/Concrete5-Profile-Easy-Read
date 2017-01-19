@@ -164,11 +164,11 @@ a.button span {
   background-color: #fff;
   border-width: 2px;
   border-style: solid;
-  border-color: #1b9af7;
+  border-color: #D5000D;
   line-height: 56px;
   border-radius: 4px;
   padding: 0 40px;
-  color: #1b9af7;
+  color: #D5000D;
   font-weight: 300;
   font-size: 18px; 
   text-decoration: none;
@@ -188,10 +188,16 @@ a.button span {
 }
 
 .bookmarklet a:hover {
-  background-color: rgba(76, 176, 249, 0.9);
+  background-color: rgba(213, 0, 13, 0.9);
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   outline: none;
+}
+
+.bookmarklet a .bk-icon {
+  font-size: 36px;
+  line-height: 50px;
+  float: left;
 }
 
 #download-zip span {
