@@ -1,0 +1,168 @@
+/*flex grid for aligning badges and qualifications*/
+.grid-third,
+.grid-third .grid-item {
+    box-sizing: border-box;
+}
+
+.grid-third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.grid-third:before {
+    display: none!important;
+}
+
+.grid-third .grid-item {
+    text-align: center;
+    width: 32%;
+    -webkit-align-items: top;
+    -ms-flex-align: top;
+    align-items: top;
+    padding: 15px!important;
+    margin-bottom: 20px!important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 400px) {
+    .grid-third {
+        display: block;
+    }
+    .grid-third .grid-item {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+.grid-third > .grid-item > p {
+    display: block;
+}
+
+/*Print styling*/
+@media print {
+    @page {
+        margin: 1.75cm;
+    }
+
+    /*hide non-essential elements*/
+    #header,
+    #page-header,
+    #footer,
+    #profile-private-message-button,
+    a[name],
+    .wcbit-alert {
+        display: none!important;
+    }
+
+    #profile-account-badges {
+        top: 0!important;
+    }
+
+    /*set links styling + url*/
+    #profile-pro-account a {
+        color: #08c!important;
+        text-decoration: underline!important;
+        word-wrap: break-word!important;
+    }
+
+    #profile-pro-account a:after {
+        content: " (" attr(href) ")";
+        font-size: 80%;
+        color: #c3c3c3
+    }
+
+    #profile-pro-account a[href^="#"]:after,
+    #profile-pro-account a[href^="javascript"]:after {
+        content: ""!important;
+    }
+
+    #profile-pro-account a[href^="http://"]:after,
+    #profile-pro-account a[href^="https://"]:after {
+        content: " (" attr(href) ")";
+    }
+
+    #profile-pro-account a[href^="/"]:after {
+        content: " (https://www.concrete5.org" attr(href) ")";
+    }
+
+    #profile-pro-account a[href^="/marketplace"]:after,
+    #profile-pro-account a[href^="/about/showcase"]:after {
+        display: block;
+        content: attr(title) " (https://www.concrete5.org" attr(href) ")";
+        page-break-inside: avoid!important;
+        break-inside: avoid!important;
+        page-break-before: avoid!important;
+        break-before: avoid!important;
+    }
+
+    #profile-pro-account img,
+    #profile-pro-account .grid-item,
+    #profile-pro-account .print-grid-item,
+    #profile-pro-account .grid-item icon-desc {
+        page-break-inside: avoid!important;
+        break-inside: avoid!important;
+    }
+
+    #profile-pro-account .grid-item icon-desc {
+        page-break-before: avoid!important;
+        break-before: avoid!important;
+    }
+
+    #profile-pro-account .print-grid-item img,
+    #profile-pro-account .grid-item img {
+        page-break-after: avoid!important;
+        break-after: avoid!important;
+        page-break-inside: avoid!important;
+        break-inside: avoid!important;
+    }
+
+    #profile-pro-account p,
+    #profile-pro-account h3 {
+        orphans: 3!important;
+        widows: 3!important;
+    }
+
+    #profile-pro-account h3 {
+        page-break-after: avoid!important;
+        break-after: avoid!important;
+    }
+
+    /*print-only grid*/
+    .print-grid-third {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .print-grid-third:before {
+        display: none!important;
+    }
+
+    .print-grid-third .print-grid-item {
+        text-align: center;
+        width: 32%;
+        -webkit-align-items: top;
+        -ms-flex-align: top;
+        align-items: top;
+        padding: 15px!important;
+        margin-bottom: 20px!important;
+    }
+
+    .print-grid-third,
+    .print-grid-third .print-grid-item {
+        box-sizing: border-box;
+    }
+}
