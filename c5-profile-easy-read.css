@@ -132,6 +132,8 @@
     #profile-pro-account h3 {
         page-break-after: avoid!important;
         break-after: avoid!important;
+        page-break-before: always!important;
+        break-before: always!important;
     }
 
     /*print-only grid*/
