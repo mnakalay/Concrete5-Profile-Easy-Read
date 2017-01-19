@@ -13,3 +13,9 @@ This little bookmarklet does 2 things:
 
   - It modifies the page's styling to make it readable without hovering
   - It adds some print styling to make it easy to print in a readable way
+
+## Limitations
+This works pretty well on screen in any modern browser.
+The print styling, however, works best in Chrome and still is not perfect but acceptable.
+Chrome has problems respecting page break directives and from time to time you'll have an image split in 2 or an image on one page and its label on the other.
+Printing in Firefox just looks not so great.
